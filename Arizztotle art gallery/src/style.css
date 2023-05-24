@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar / header styles */
+
+/* header {
+  font-family: "Antonio", sans-serif;
+  will-change: top;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  width: 100%;
+  color: black;
+  z-index: 100;
+  top: 0px;
+  transition: 0.5s ease;
+}
+
+header nav {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.1ch;
+  transition: 0.2s ease;
+}
+
+.middle {
+  flex-grow: 0;
+  flex: 3;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+}
+
+.left .searchbar {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  margin: 0px 40px;
+}
+
+.left .searchbar input {
+  color: white;
+  font-family: Arial;
+  font-size: 1rem;
+  padding-left: 10px;
+  flex: 1;
+  background-color: rgb(40, 40, 40);
+  border-left: 1px solid rgb(90, 90, 90);
+  border-top: 1px solid rgb(130, 130, 130);
+  border-bottom: 1px solid rgb(60, 60, 60);
+  border-right: 1px solid rgb(60, 60, 60);
+}
+
+.left .searchbar input:focus {
+  outline: none;
+  color: white;
+}
+
+.left .searchbar .right {
+  outline: none;
+  border-bottom: 1px solid rgb(60, 60, 60);
+  border-top: 1px solid rgb(100, 100, 100);
+  border-right: 1px solid grey;
+  flex: 0.2;
+  background-color: rgb(50, 50, 50);
+}
+ */
+
+/* Parallax Landing Page Styles */
+
+.container1 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container1 h1 {
+  position: absolute;
+  font-size: 5rem;
+  color: cornsilk;
+  font-family: Arial;
+  font-weight: 900;
+  top: 30vh;
+  left: 50%;
+  letter-spacing: -0.1ch;
+  transform: translate(-50%, -50%);
+  /* background: rgb(156, 46, 46);
+  background: linear-gradient(
+    14deg,
+    rgba(156, 46, 46, 1) 0%,
+    rgba(198, 0, 0, 1) 100%
+  ); */
+  border-radius: 40px 40px 40px 40px;
+  padding: 0px 15px 5px 15px;
+}
+
+.container1 h1 span {
+  font-size: 15px;
+}
+
+.container1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transform: translateY(224px) scale(0.8);
+}
+
+/* .background {
+  filter: blur(15px);
+  animation: un-blur 5.5s ease forwards;
+}
+
+.mountain {
+  filter: blur(10px);
+  animation: un-blur 3s ease forwards;
+}
+
+.person {
+  filter: blur(4px);
+  animation: un-blur 3s ease forwards;
+} */
+
+.smoke1 {
+  opacity: 1;
+  width: 200%;
+}
+
+.smoke2 {
+  opacity: 0.5;
+  height: 150%;
+  width: 200%;
+}
+
+/* After parallax landing -> */
+
+.body {
+  width: 100%;
+}
+
+.body div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-family: "Arial";
+  padding: 100px 0px 0px 0px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.body-1 div {
+  min-width: 300px;
+  margin: 20px;
+  flex: 2;
+}
+
+.body-1 div h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(40, 40, 40);
+  margin-bottom: 15px;
+}
+
+.body-1 div h1::after {
+  position: absolute;
+  content: "";
+  width: 1ch;
+  height: 100%;
+  top: 0;
+  left: -1.8ch;
+  background: rgb(156, 46, 46);
+  background: linear-gradient(
+    14deg,
+    rgba(156, 46, 46, 1) 0%,
+    rgba(198, 0, 0, 1) 100%
+  );
+  z-index: 1;
+}
+
+.body-1 div p {
+  color: grey;
+  font-size: 1.1rem;
+}
+
+.body-1 aside {
+  flex: 4;
+  padding: 20px;
+  position: relative;
+}
+
+.body-1 aside img {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.body-1 aside::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  top: -100%;
+  right: 0;
+  z-index: -1;
+  background: rgb(255, 248, 220);
+}
+
+.body-1 aside p {
+  font-family: "Antonio";
+}
+
+.body-1 aside a {
+  color: grey;
+  text-decoration: none;
+}
+
+.body-2 {
+}
+
+/* Media Queries for scalability */
+
+@media only screen and (max-width: 800px) {
+  header .left .searchbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .middle {
+    flex: 0;
+  }
+  header nav a {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  .container1 h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Animations */
+
+@keyframes un-blur {
+  from {
+    opacity: 0;
+  }
+  %30 {
+    opacity: 1;
+  }
+  to {
+    filter: blur(0px);
+  }
+}
